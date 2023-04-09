@@ -6,7 +6,7 @@ We're given a RSA public key (pub.pem), an encoded flag file (flag.enc), and a p
 
 ## Solution
 
-This was my solution. I'm really interested in any faster solutions, because some teams solved this in like 7 minutes.
+I saw some teams solve this in <10 minutes, so I'm interested in their solutions as well!
 
 ### Get e and n (and other info) from the public key
 
@@ -63,9 +63,11 @@ coeff=INTEGER:14
 
 Except, we replace it with the numbers we found with the python script above.
 
-asn1=SEQUENCE:rsa_key
+
 
 ```python
+asn1=SEQUENCE:rsa_key
+
 [rsa_key]
 version=INTEGER:0
 modulus=INTEGER:11684495802889072585203310515250083572285658052270998153007378254694580706620837521287604089276341404868210594675627429508088431073125103913482926295102079
